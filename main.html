@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ECOMMERCE WEBSITE</title>
+    <link href=" css/样式.css" rel="stylesheet">
+    <script >
+            var number=1;
+            function turnph()
+            {
+                number++;
+                if(number>3)
+                {
+                    number=1;
+                }
+                var img =document.getElementById("img")
+                img.src="images/turn-"+number+".jpg";
+            }
+            setInterval(turnph, 3000)
+        </script>
+</head>
+<body>
+    <div id="top">
+        <ul class="menu">
+            <li><a href="#">Account Sign In</a></li>
+            <li><a href="#">Register</a></li>
+            <li><a href="#">Buyers Guide</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Blog</a></li>
+            <li class="nodot"><a href="#">Contact</a></li>
+        </ul>
+        <ul class="bar">
+            <li class="teleph">123.456.7890</li> 
+            <li class="help"><a href="#">Live Help</a></li>
+            <li><a href="#"><img src="images/canada.png"></a></li>
+            <li><a href="#"><img src="images/America.png"></a></li>
+        </ul>
+    </div>
+    <div id="header">
+        <div id="shopping">
+            <p>0 items in your bag</p>
+            <a href="#">Check Out</a>
+        </div>
+        <h1 title="ECOMMERCE WEBSITE"><a href="#"><img src="images/logo.png" alt="logo"></a></h1>
+        <div class="search">
+            <form action="">
+                <input class="text"type="text">
+                <input class="buttun"type="submit" value="GO">
+            </form>
+        </div>
+    </div>
+    <ul id="dirct"></ul>
+    <div id="turnph">
+        <img id="img" src="images/turn-1.jpg" width="50%" height="50%">
+    </div>
+    <div id="content"></div>
+    <div id="footer"></div>
+    
+</body>
+</html>
